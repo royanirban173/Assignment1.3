@@ -1,0 +1,17 @@
+Str1=input("Please enter your Full name :")
+lst=list()
+lst=Str1.split(' ')
+if len(lst)==2:
+    fname=lst[0]
+    lname=lst[1]
+    lenfname=len(fname)
+    lenlname=len(lname)
+    while(lenfname>0):
+        print(fname[lenfname-1],end='')
+        lenfname=lenfname-1
+    print(' ',end='')
+    while(lenlname>0):
+        print(lname[lenlname-1],end='')
+        lenlname=lenlname-1
+else:
+    print("Full Name Should have only the First Name and the Surname")
